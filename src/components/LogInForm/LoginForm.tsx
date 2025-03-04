@@ -3,7 +3,6 @@ import { routes } from "../../routes/routes";
 import { useState } from "react";
 import {
   getAllMetadataAsync,
-
   getFilteredFilmesAsync,
   getUserByIdAsync,
   loginUserAsync,

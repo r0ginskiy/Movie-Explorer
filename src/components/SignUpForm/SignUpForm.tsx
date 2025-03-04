@@ -79,10 +79,14 @@ const SignUpForm = () => {
           </h2>
           <form className="space-y-4" onSubmit={handleRegisterClick}>
             <div>
-              <label className="block text-gray-700 font-medium mb-2">
+              <label
+                htmlFor="email"
+                className="block text-gray-700 font-medium mb-2"
+              >
                 Email
               </label>
               <input
+                id="email"
                 type="email"
                 name="email"
                 value={credentials.email}
@@ -93,10 +97,14 @@ const SignUpForm = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-700 font-medium mb-2">
+              <label
+                className="block text-gray-700 font-medium mb-2"
+                htmlFor="name"
+              >
                 Name
               </label>
               <input
+                id="name"
                 type="text"
                 name="name"
                 value={credentials.name}
@@ -107,10 +115,14 @@ const SignUpForm = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-700 font-medium mb-2">
+              <label
+                className="block text-gray-700 font-medium mb-2"
+                htmlFor="password"
+              >
                 Password
               </label>
               <input
+                id="password"
                 type="password"
                 name="password"
                 value={credentials.password}
