@@ -38,8 +38,6 @@ const FilterItem: React.FC<FilterItemProps> = ({
   const [genres, setGenres] = useState<string[]>([]);
   const [languages, setLanguages] = useState<string[]>([]);
 
-
-
   useEffect(() => {
     if (metadata) {
       setYears(metadata.years?.map((year: number) => year.toString()) || []);
